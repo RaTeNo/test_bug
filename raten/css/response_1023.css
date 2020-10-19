@@ -1,0 +1,560 @@
+@media (max-width: 1023px)
+{
+    /*-------------------
+        Global styles
+    -------------------*/
+    :root
+    {
+        --font_size: 16px;
+        --font_size_title: 32px;
+    }
+
+
+    .block
+    {
+        padding: 60px 0;
+    }
+
+
+
+
+    /*------------
+        Header
+    ------------*/
+    header .logo
+    {
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    header .logo > * + *
+    {
+        margin: 0;
+    }
+
+    header .logo .desc
+    {
+        display: none;
+    }
+
+
+    header .phone
+    {
+        display: none;
+    }
+
+    header .mob_phone
+    {
+        display: flex;
+    }
+
+
+    header .mob_menu_btn
+    {
+        display: block;
+    }
+
+
+    header .menu
+    {
+        position: absolute;
+        top: 100%;
+        left: 0;
+
+        display: none;
+
+        width: 100%;
+        padding: 20px;
+
+        background: #1e1e1e;
+    }
+
+    header .menu > *
+    {
+        width: 100%;
+    }
+
+    header .menu > * + *
+    {
+        margin-left: 0;
+
+        border-top: 1px solid #333;
+    }
+
+    header .menu > * > a
+    {
+        color: #fff;
+        font-size: 20px;
+
+        width: 100%;
+        padding: 15px 0;
+
+        text-align: center;
+        text-transform: none;
+    }
+
+    header .menu > * > a .icon
+    {
+        display: none;
+
+        margin: 0 auto;
+    }
+
+    header .menu > * > a .icon + span
+    {
+        display: inline;
+    }
+
+
+
+    /*----------------
+        Block head
+    ----------------*/
+    .block_head .desc
+    {
+        font-size: 17px;
+        line-height: 25px;
+    }
+
+    .block_head .desc br
+    {
+        display: none;
+    }
+
+    .block_head .btn
+    {
+        margin: 30px auto 0;
+    }
+
+
+
+    /*------------------
+        Form elements
+    ------------------*/
+    .form .columns > *.width1of3
+    {
+        width: calc(50% - var(--form_columns_offset));
+    }
+
+    .form .submit
+    {
+        padding-top: 10px;
+    }
+
+    .form .btn
+    {
+        min-width: 195px;
+    }
+
+
+
+    /*----------------
+        Typography
+    ----------------*/
+    .text_block
+    {
+        line-height: 24px;
+    }
+
+
+
+    /*-----------------
+        Main slider
+    -----------------*/
+    .main_slider .slide .title
+    {
+        font-size: 36px;
+    }
+
+    .main_slider .slide .sub_title
+    {
+        font-size: 24px;
+        line-height: 28px;
+    }
+
+    .main_slider .slide .desc
+    {
+        font-size: 18px;
+        line-height: 26px;
+    }
+
+    .main_slider .slide .desc
+    {
+        font-size: 19px;
+        line-height: 27px;
+
+        width: 900px;
+        margin-top: 25px;
+    }
+
+    .main_slider .slide .pluses
+    {
+        font-size: 20px;
+        line-height: 26px;
+
+        width: 100%;
+
+        column-gap: 30px;
+    }
+
+    .main_slider .slide .btn
+    {
+        margin-top: 35px;
+    }
+
+
+
+    /*-------------
+        Welcome
+    -------------*/
+    .welcome .block_head
+    {
+        width: 100%;
+        max-width: 100%;
+        margin-bottom: 40px !important;
+
+        text-align: center;
+    }
+
+    .welcome .block_head .title
+    {
+        width: 100%;
+    }
+
+
+    .welcome .img
+    {
+        width: 100%;
+        max-width: 100%;
+    }
+
+
+
+    /*----------------
+        Advantages
+    ----------------*/
+    .advantages .row
+    {
+        margin-bottom: -40px;
+        margin-left: -50px;
+    }
+
+    .advantages .row > *
+    {
+        width: calc(50% - 50px);
+        margin-bottom: 40px;
+        margin-left: 50px;
+    }
+
+
+    .advantages .item
+    {
+        min-height: 58px;
+        padding-left: 75px;
+    }
+
+    .advantages .item .icon
+    {
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        margin: 0;
+    }
+
+
+
+    /*-----------
+        Steps
+    -----------*/
+    .steps .block_head
+    {
+        margin-bottom: 40px;
+    }
+
+
+    .steps .row
+    {
+        margin-bottom: -40px;
+        margin-left: -50px;
+    }
+
+    .steps .row > *
+    {
+        width: calc(50% - 50px);
+        margin-bottom: 40px;
+        margin-left: 50px;
+    }
+
+
+    .steps .step
+    {
+        line-height: 24px;
+    }
+
+    .steps .step:nth-child(odd):before
+    {
+        display: none;
+    }
+
+    .steps .step .icon
+    {
+        width: 100px;
+        height: 100px;
+    }
+
+
+
+    .steps .bottom
+    {
+        margin-top: 160px;
+        margin-left: 0;
+        padding: 170px 25px 25px 25px;
+
+        text-align: center;
+    }
+
+    .steps .bottom img
+    {
+        top: -135px;
+        right: 0;
+        bottom: auto;
+        left: 0;
+    }
+
+    .steps .bottom .desc
+    {
+        font-size: 17px;
+    }
+
+
+
+    /*-------------
+        Devices
+    -------------*/
+    .devices .row
+    {
+        margin-bottom: -40px;
+        margin-left: -50px;
+    }
+
+    .devices .row > *
+    {
+        width: calc(50% - 50px);
+        margin-bottom: 40px;
+        margin-left: 50px;
+    }
+
+
+    .devices .device
+    {
+        font-size: 20px;
+    }
+
+
+
+    /*-----------------
+        Action form
+    -----------------*/
+    .action_form .block_head .desc
+    {
+        line-height: 25px;
+    }
+
+
+
+    /*---------------
+        Where buy
+    ---------------*/
+    .where_buy .block_head .your_location
+    {
+        margin-left: auto;
+    }
+
+
+    .where_buy .filter
+    {
+        padding-bottom: 0;
+    }
+
+    .where_buy .filter .line
+    {
+        margin-bottom: 20px;
+    }
+
+
+    .where_buy table
+    {
+        width: 850px;
+    }
+
+    .where_buy td.name
+    {
+        font-size: 17px;
+
+        width: 230px;
+        min-width: 230px;
+    }
+
+
+
+    /*------------------
+        Garanti head
+    ------------------*/
+    .garanti_head .cont
+    {
+        min-height: 500px;
+    }
+
+
+    .garanti_head .info .title
+    {
+        font-size: 36px;
+    }
+
+    .garanti_head .info .sub_title
+    {
+        font-size: 24px;
+        line-height: 28px;
+    }
+
+    .garanti_head .info .exp
+    {
+        font-size: 18px;
+
+        bottom: 40px;
+    }
+
+
+
+    /*------------------
+        Garanti info
+    ------------------*/
+    .garanti_info .row
+    {
+        margin-bottom: -35px;
+        margin-left: -35px;
+    }
+
+    .garanti_info .row > *
+    {
+        width: calc(50% - 35px);
+        max-width: calc(50% - 35px);
+        margin-bottom: 35px;
+        margin-left: 35px;
+    }
+
+
+    .garanti_info .item
+    {
+        font-size: 20px;
+        line-height: 28px;
+    }
+
+    .garanti_info .item br
+    {
+        display: none;
+    }
+
+
+    .garanti_info .bottom
+    {
+        margin-top: 160px;
+        margin-left: 0;
+        padding: 170px 25px 25px 25px;
+
+        text-align: center;
+    }
+
+    .garanti_info .bottom img
+    {
+        top: -135px;
+        right: 0;
+        bottom: auto;
+        left: 0;
+    }
+
+    .garanti_info .bottom .desc
+    {
+        font-size: 17px;
+    }
+
+
+
+    /*----------------
+        Price list
+    ----------------*/
+    .price_list .item + .item
+    {
+        margin-top: 20px;
+    }
+
+
+    .price_list .item .head
+    {
+        padding: 20px 80px 20px 20px;
+    }
+
+    .price_list .item .head .title
+    {
+        font-size: 20px;
+    }
+
+    .price_list .item .head .icon
+    {
+        right: 20px;
+    }
+
+
+    .price_list .item .data
+    {
+        padding: 0 20px 20px;
+    }
+
+
+    .price_list .item table th
+    {
+        padding: 10px 20px 12px;
+    }
+
+    .price_list .item td
+    {
+        padding: 13px 20px;
+    }
+
+
+
+    /*------------
+        Button
+    ------------*/
+    .btn
+    {
+        padding: 14px 32px;
+    }
+
+
+
+    /*----------
+        Tabs
+    ----------*/
+    .tabs
+    {
+        margin-left: -35px;
+    }
+
+    .tabs button
+    {
+        max-width: calc(100% - 35px);
+        margin-left: 35px;
+    }
+
+
+
+    /*------------
+        Footer
+    ------------*/
+    footer
+    {
+        padding: 45px 0 35px;
+    }
+}

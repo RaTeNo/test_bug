@@ -1,0 +1,110 @@
+/*
+Theme Name: New-RaTeN
+Theme URI: http://www.free-lance.ru/users/RaTeN
+Author: RaTeN
+Author URI: http://www.free-lance.ru/users/RaTeN
+Description: Freelance RaTeN 
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: all-in
+Text Domain: RaTeN
+*/
+
+/* =Reset default browser CSS. Based on work by Eric Meyer: http://meyerweb.com/eric/tools/css/reset/index.html
+-------------------------------------------------------------- */
+
+header .menu > .current-menu-item a{
+	color: #45d62d;
+}
+.where_buy .filter input{
+	color: var(--form_placeholder_color);
+    line-height: 54px;
+    position: relative;
+    display: block;
+    overflow: hidden;
+    height: 54px;
+    padding: 0 54px 0 23px;
+    cursor: pointer;
+    transition: .2s linear;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    border: 1px solid var(--form_border_color);
+    border-radius: var(--form_border_radius);
+    width: 100%;
+    background: var(--form_bg_color);
+    font-size: 18px;
+}
+
+header .logo{
+	text-decoration: none;
+}
+
+/*-----------
+    PopUp
+-----------*/
+.modal
+{
+    display: none;
+    visibility: visible !important;
+
+    width: 520px;
+    max-width: 100%;
+    padding: 146px 93px;
+
+    background: #fff;
+    box-shadow: 0 4px 100px rgba(124, 73, 255, .1);
+}
+
+.modal_title
+{
+    color: #32353f;
+    font-size: 34px;
+    font-weight: bold;
+    line-height: 50px;
+
+    margin-bottom: 39px;
+
+    text-align: center;
+}
+
+.modal .text {
+    color: #32353f;
+    font-size: 25px;
+    line-height: 40px;
+    text-align: center;
+}
+
+
+.modal input{
+    border: 2px solid #222 !important;
+}
+
+@media (max-width: 479px)
+{
+	.modal {
+	    padding: 60px 35px;
+	}
+	.modal_title {
+	    font-size: 25px;
+	    line-height: 30px;
+	    margin-bottom: 25px;
+	}
+	 .modal .text
+    {
+        font-size: 18px;
+        line-height: 24px;
+    }
+}
+
+
+form .error{
+  border:2px solid red !important;
+}
+form .error::placeholder{
+	color:red;
+}
+
+footer .links{
+	list-style: none;
+}

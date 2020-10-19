@@ -1,0 +1,361 @@
+@media (max-width: 479px)
+{
+    /*-------------------
+        Global styles
+    -------------------*/
+    :root
+    {
+        --font_size: 15px;
+        --font_size_title: 27px;
+    }
+
+
+
+    /*------------
+        Header
+    ------------*/
+
+
+
+    /*----------------
+        Block head
+    ----------------*/
+    .block_head .desc
+    {
+        margin-top: 15px;
+    }
+
+
+
+    /*------------------
+        Form elements
+    ------------------*/
+    .form .columns > *
+    {
+        width: calc(100% - var(--form_columns_offset));
+    }
+
+    .form .line
+    {
+        margin-bottom: 15px;
+    }
+
+    .form .input
+    {
+        height: 48px;
+    }
+
+
+
+    /*----------------
+        Typography
+    ----------------*/
+
+
+
+    /*-----------------
+        Main slider
+    -----------------*/
+    .main_slider .slide .title
+    {
+        font-size: 28px;
+    }
+
+    .main_slider .slide .sub_title
+    {
+        font-size: 21px;
+        line-height: 27px;
+
+        margin-top: 20px;
+    }
+
+    .main_slider .slide .desc
+    {
+        font-size: 15px;
+        line-height: 23px;
+
+        margin-top: 20px;
+    }
+
+    .main_slider .slide .pluses
+    {
+        font-size: 18px;
+        line-height: 24px;
+
+        margin-top: 30px;
+    }
+
+    .main_slider .slide .pluses > * + *
+    {
+        margin-top: 10px;
+    }
+
+    .main_slider .slide .btn
+    {
+        margin-top: 30px;
+    }
+
+
+
+    /*-------------
+        Welcome
+    -------------*/
+    .welcome .advantages
+    {
+        margin-top: 55px;
+    }
+
+
+
+    /*----------------
+        Advantages
+    ----------------*/
+    .advantages .row
+    {
+        margin-bottom: -35px;
+        margin-left: -20px;
+    }
+
+    .advantages .row > *
+    {
+        width: calc(50% - 20px);
+        margin-bottom: 35px;
+        margin-left: 20px;
+    }
+
+
+    .advantages .item br
+    {
+        display: none;
+    }
+
+
+
+    /*-----------
+        Steps
+    -----------*/
+    .steps .block_head
+    {
+        margin-bottom: 30px;
+    }
+
+
+    .steps .row
+    {
+        margin-bottom: -35px;
+        margin-left: -20px;
+    }
+
+    .steps .row > *
+    {
+        width: calc(50% - 20px);
+        margin-bottom: 35px;
+        margin-left: 20px;
+    }
+
+
+    .steps .step
+    {
+        line-height: 21px;
+    }
+
+    .steps .step .icon
+    {
+        width: 90px;
+        height: 90px;
+    }
+
+    .steps .step + .step:before
+    {
+        top: 36px;
+        left: -36px;
+
+        width: 53px;
+        height: 24px;
+
+        background-size: 100% 100%;
+    }
+
+
+
+    .steps .bottom
+    {
+        margin-top: 150px;
+        padding: 160px 20px 35px 20px;
+
+        border-width: 8px;
+    }
+
+    .steps .bottom img
+    {
+        top: -120px;
+    }
+
+
+
+    /*-------------
+        Devices
+    -------------*/
+    .devices .row
+    {
+        margin-bottom: -35px;
+        margin-left: -20px;
+    }
+
+    .devices .row > *
+    {
+        width: calc(50% - 20px);
+        margin-bottom: 35px;
+        margin-left: 20px;
+    }
+
+
+    .devices .device
+    {
+        font-size: 18px;
+    }
+
+    .devices .device .thumb
+    {
+        height: 136px;
+        margin-bottom: 15px;
+    }
+
+
+
+    /*-----------------
+        Action form
+    -----------------*/
+    .action_form .block_head .desc
+    {
+        line-height: 23px;
+    }
+
+
+
+    /*---------------
+        Where buy
+    ---------------*/
+    .where_buy .head
+    {
+        margin-bottom: 20px;
+    }
+
+
+
+    /*------------------
+        Garanti head
+    ------------------*/
+    .garanti_head .info .title
+    {
+        font-size: 30px;
+    }
+
+    .garanti_head .info .sub_title
+    {
+        font-size: 21px;
+        line-height: 27px;
+
+        margin-top: 20px;
+    }
+
+    .garanti_head .info .btn
+    {
+        margin-top: 30px;
+    }
+
+    .garanti_head .info .exp
+    {
+        font-size: 16px;
+
+        margin-top: 35px;
+    }
+
+
+
+    /*------------------
+        Garanti info
+    ------------------*/
+    .garanti_info .bottom
+    {
+        margin-top: 150px;
+        padding: 160px 20px 35px 20px;
+
+        border-width: 8px;
+    }
+
+    .garanti_info .bottom img
+    {
+        top: -120px;
+    }
+
+
+
+    /*------------
+        Button
+    ------------*/
+    .btn
+    {
+        padding: 13px 25px 15px;
+    }
+
+
+
+    /*----------
+        Tabs
+    ----------*/
+    .tabs
+    {
+        font-size: 0;
+
+        display: block;
+        overflow: auto;
+
+        width: calc(100% + 40px);
+        margin: 0 -20px;
+        padding: 0 20px;
+
+        white-space: nowrap;
+    }
+
+    .tabs::-webkit-scrollbar
+    {
+        width: 0 !important;
+        height: 0 !important;
+
+        background-color: transparent !important;
+    }
+
+    .tabs::-webkit-scrollbar-thumb
+    {
+        background-color: transparent !important;
+    }
+
+    .tabs button
+    {
+        font-size: var(--font_size);
+
+        display: inline-block;
+
+        max-width: none;
+        margin-left: 0;
+
+        vertical-align: top;
+        white-space: normal;
+    }
+
+    .tabs button + button
+    {
+        margin-left: 50px;
+    }
+
+
+
+    /*------------
+        Footer
+    ------------*/
+    footer .menu
+    {
+        column-count: 2;
+    }
+}
